@@ -128,12 +128,16 @@ const schema: Schema = {
         'local',
         'https://www.plantuml.com/plantuml/png/{data}',
         'https://www.plantuml.com/plantuml/svg/{data}',
+        'http://plantuml-server:18080/png/{data}',
+        'http://plantuml-server:18080/svg/{data}'
       ],
       options: {
         enum_titles: [
           'Local - Need Java and Graphviz',
           'Online (plantuml.com) - PNG',
           'Online (plantuml.com) - SVG',
+          'Custome - PlantUML Server - PNG',
+          'Custome - PlantUML Server - SVG'
         ],
       },
       required: true,
